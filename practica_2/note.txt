@@ -1,0 +1,4 @@
+1. Terraform no hace distincion entre si los recursos se encuentran en el mismo archivo o no, con la referencia ${xxxx.xxx[0].name} es suficiente para que se referencie.
+2. Se importo un nuevo recurso de la pagina de Terraform y para que pueda ser utlizable se necesita correr el comando "terraform init" para descar las dependencias.
+3. Se utilizaron la propiedad "count" para poder repetir la creacion del mismo recuerso de manera dinamica. Applicando el concepto DRY (Don't Repeat Yourself).
+
